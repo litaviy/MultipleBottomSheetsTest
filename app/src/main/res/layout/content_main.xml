@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/content_background"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/firstBSH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/first_color"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.example.klitaviy.multiplebottomsheetstest.UserLockBottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/firstTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="1ST"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondBSH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/second_color"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.example.klitaviy.multiplebottomsheetstest.UserLockBottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/secondTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="2ND"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdBSH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/third_color"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.example.klitaviy.multiplebottomsheetstest.UserLockBottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/thirdTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="3RD"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

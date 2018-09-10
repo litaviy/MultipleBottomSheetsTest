@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="first_peek_height">168dp</dimen>
+    <dimen name="second_peek_height">112dp</dimen>
+    <dimen name="third_peek_height">56dp</dimen>
+</resources>
